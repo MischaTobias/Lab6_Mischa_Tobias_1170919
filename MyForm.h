@@ -274,6 +274,7 @@ namespace Lab6MischaTobias1170919 {
 		return -1;
 	}
 	private: System::Int16 Hash(int val) {
+		arregloNums->Sort();
 		int pos = val % arregloLength * 2;
 		if (System::Convert::ToInt16(tablaHash[pos]) == val)
 		{
